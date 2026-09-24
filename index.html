@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GodAlone Open Source</title>
+<meta name="description" content="Free and open-source software and resources created to benefit people, for the sake of Allah." />
+<style>
+  :root {
+    --navy: #0a1128;
+    --navy-light: #14213d;
+    --gold: #c9a94a;
+    --text: #e8e6df;
+    --text-dim: #a9a9a0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    padding: 4rem 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--navy-light);
+  }
+  header h1 {
+    color: var(--gold);
+    font-size: 2.2rem;
+    margin: 0 0 0.5rem;
+  }
+  header p {
+    color: var(--text-dim);
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+  .category {
+    margin-bottom: 2.5rem;
+  }
+  .category h2 {
+    color: var(--gold);
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--navy-light);
+    padding-bottom: 0.5rem;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .project-card {
+    background: var(--navy-light);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+  }
+  .project-card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+  }
+  .project-card h3 a { color: var(--text); text-decoration: none; }
+  .project-card h3 a:hover { color: var(--gold); }
+  .project-card p {
+    margin: 0 0 0.6rem;
+    color: var(--text-dim);
+    font-size: 0.92rem;
+  }
+  .project-card .links a {
+    color: var(--gold);
+    font-size: 0.85rem;
+    margin-right: 0.8rem;
+    text-decoration: none;
+  }
+  .project-card .links a:hover { text-decoration: underline; }
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    padding: 2rem 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--navy-light);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>GodAlone Open Source</h1>
+  <p>Free and open-source software and resources created to benefit people, for the sake of Allah.</p>
+</header>
+
+<main>
+
+  <!--
+    One .category block per group below. Duplicate the .project-card
+    block for each project. Fill in real links as repos go live; remove
+    a category entirely if it has nothing in it yet.
+  -->
+
+  <section class="category">
+    <h2>Quran</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/quran-webapp">Quran Web App</a></h3>
+        <p>[Short description]</p>
+        <div class="links">
+          <a href="#">Live demo</a>
+          <a href="https://github.com/GodAlone/quran-webapp">Source</a>
+          <a href="#">Docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Education</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/quran-quiz">Quran Quiz</a></h3>
+        <p>[Short description]</p>
+        <div class="links">
+          <a href="#">Live demo</a>
+          <a href="https://github.com/GodAlone/quran-quiz">Source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Calculators</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/calculators">Zakat, Salat, Ramadan, 19 &amp; Inheritance Calculators</a></h3>
+        <p>[Short description]</p>
+        <div class="links">
+          <a href="#">Live demo</a>
+          <a href="https://github.com/GodAlone/calculators">Source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Websites</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://godalone.in">godalone.in</a></h3>
+        <p>[Short description]</p>
+        <div class="links">
+          <a href="https://godalone.in">Visit</a>
+          <a href="https://github.com/GodAlone/godalone-theme">Theme source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://kadavulmattum.org">kadavulmattum.org</a></h3>
+        <p>[Short description — Tamil sister site]</p>
+        <div class="links">
+          <a href="https://kadavulmattum.org">Visit</a>
+          <a href="https://github.com/GodAlone/kadavulmattum-theme">Theme source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Books</h2>
+    <div class="projects"></div>
+  </section>
+
+  <section class="category">
+    <h2>Audio</h2>
+    <div class="projects"></div>
+  </section>
+
+  <section class="category">
+    <h2>Video</h2>
+    <div class="projects"></div>
+  </section>
+
+  <section class="category">
+    <h2>Kids</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/kids-quran-coloring-book">Kids Quran Coloring Book</a></h3>
+        <p>[Short description]</p>
+        <div class="links">
+          <a href="https://github.com/GodAlone/kids-quran-coloring-book">Source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Developer Tools</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/quran-data">quran-data</a></h3>
+        <p>Shared Quran text, translations, and metadata used across every project.</p>
+        <div class="links">
+          <a href="https://github.com/GodAlone/quran-data">Source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/i18n-strings">i18n-strings</a></h3>
+        <p>Shared UI translation strings for all sites and apps.</p>
+        <div class="links">
+          <a href="https://github.com/GodAlone/i18n-strings">Source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAlone/design-system">design-system</a></h3>
+        <p>The navy + gold visual identity shared across products.</p>
+        <div class="links">
+          <a href="https://github.com/GodAlone/design-system">Source</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Future Projects</h2>
+    <p style="color: var(--text-dim);">More to come, in shaa Allah.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Open source · Free · Transparent · Reusable · Accessible · Well documented</p>
+  <p><a href="https://github.com/GodAlone" style="color: var(--gold);">github.com/GodAlone</a></p>
+</footer>
+
+</body>
+</html>
