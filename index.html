@@ -36,6 +36,12 @@
     max-width: 40rem;
     margin: 0 auto;
   }
+  header p.tagline {
+    color: var(--text);
+    max-width: 34rem;
+    margin: 1rem auto 0;
+    font-size: 0.95rem;
+  }
   main {
     max-width: 60rem;
     margin: 0 auto;
@@ -86,6 +92,7 @@
     font-size: 0.9rem;
     border-top: 1px solid var(--navy-light);
   }
+  footer a { color: var(--gold); }
 </style>
 </head>
 <body>
@@ -93,26 +100,28 @@
 <header>
   <h1>GodAlone Open Source</h1>
   <p>Free and open-source software and resources created to benefit people, for the sake of Allah.</p>
+  <p class="tagline">Everything here — apps, source code, Quran text, translations, books and audio — is free to use, copy, modify and share. No cost, no account, no catch. May it be a means for someone, somewhere, to draw closer to the Qur'an.</p>
 </header>
 
 <main>
-
-  <!--
-    One .category block per group below. Duplicate the .project-card
-    block for each project. Fill in real links as repos go live; remove
-    a category entirely if it has nothing in it yet.
-  -->
 
   <section class="category">
     <h2>Quran</h2>
     <div class="projects">
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/quran-webapp">Quran Web App</a></h3>
-        <p>[Short description]</p>
+        <h3><a href="https://godaloneoss.github.io/quran-webapp/">Quran Web App</a></h3>
+        <p>Read, search and listen to the Qur'an online — verse-by-verse translations and audio recitation, free to use in the browser.</p>
         <div class="links">
-          <a href="#">Live demo</a>
-          <a href="https://github.com/GodAlone/quran-webapp">Source</a>
-          <a href="#">Docs</a>
+          <a href="https://godaloneoss.github.io/quran-webapp/">Live demo</a>
+          <a href="https://github.com/GodAloneOSS/quran-webapp">Source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://godaloneoss.github.io/quran-kadavulmattum-webapp/">Quran Web App (Tamil snapshot)</a></h3>
+        <p>Archived snapshot of the Quran Web App as served for quran.kadavulmattum.org, kept for reference and reuse.</p>
+        <div class="links">
+          <a href="https://godaloneoss.github.io/quran-kadavulmattum-webapp/">Live demo</a>
+          <a href="https://github.com/GodAloneOSS/quran-kadavulmattum-webapp">Source</a>
         </div>
       </div>
     </div>
@@ -122,11 +131,10 @@
     <h2>Education</h2>
     <div class="projects">
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/quran-quiz">Quran Quiz</a></h3>
-        <p>[Short description]</p>
+        <h3><a href="https://github.com/GodAloneOSS/quran-quiz">Quran Quiz</a></h3>
+        <p>A WordPress plugin: Quran quiz with text-to-speech, in English and Tamil. Install it on any WordPress site.</p>
         <div class="links">
-          <a href="#">Live demo</a>
-          <a href="https://github.com/GodAlone/quran-quiz">Source</a>
+          <a href="https://github.com/GodAloneOSS/quran-quiz">Source</a>
         </div>
       </div>
     </div>
@@ -136,11 +144,10 @@
     <h2>Calculators</h2>
     <div class="projects">
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/calculators">Zakat, Salat, Ramadan, 19 &amp; Inheritance Calculators</a></h3>
-        <p>[Short description]</p>
+        <h3><a href="https://github.com/GodAloneOSS/calculators">Zakat, Salat, Ramadan &amp; 19 Calculators</a></h3>
+        <p>WordPress page-template source for the Zakat calculator, prayer (Salat) timings, Ramadan calculator, and the Qur'an's 19-based numerical calculator.</p>
         <div class="links">
-          <a href="#">Live demo</a>
-          <a href="https://github.com/GodAlone/calculators">Source</a>
+          <a href="https://github.com/GodAloneOSS/calculators">Source</a>
         </div>
       </div>
     </div>
@@ -151,18 +158,26 @@
     <div class="projects">
       <div class="project-card">
         <h3><a href="https://godalone.in">godalone.in</a></h3>
-        <p>[Short description]</p>
+        <p>The main GodAlone website — articles, calculators, downloads and more.</p>
         <div class="links">
           <a href="https://godalone.in">Visit</a>
-          <a href="https://github.com/GodAlone/godalone-theme">Theme source</a>
+          <a href="https://github.com/GodAloneOSS/godalone-theme">Theme source</a>
         </div>
       </div>
       <div class="project-card">
         <h3><a href="https://kadavulmattum.org">kadavulmattum.org</a></h3>
-        <p>[Short description — Tamil sister site]</p>
+        <p>The Tamil-language sister site of godalone.in.</p>
         <div class="links">
           <a href="https://kadavulmattum.org">Visit</a>
-          <a href="https://github.com/GodAlone/kadavulmattum-theme">Theme source</a>
+          <a href="https://github.com/GodAloneOSS/kadavulmattum-theme">Theme source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://ekkhuda.org">ekkhuda.org</a></h3>
+        <p>A sister site sharing the same message and resources.</p>
+        <div class="links">
+          <a href="https://ekkhuda.org">Visit</a>
+          <a href="https://github.com/GodAloneOSS/ekkhuda-theme">Theme source</a>
         </div>
       </div>
     </div>
@@ -170,27 +185,44 @@
 
   <section class="category">
     <h2>Books</h2>
-    <div class="projects"></div>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAloneOSS/books">Books</a></h3>
+        <p>Free books, sourced from the godalone.in library, released for anyone to read, copy and share.</p>
+        <div class="links">
+          <a href="https://github.com/GodAloneOSS/books">Browse</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="category">
     <h2>Audio</h2>
-    <div class="projects"></div>
+    <div class="projects">
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAloneOSS/audios">Quran Audio (English &amp; Tamil)</a></h3>
+        <p>Full Qur'an recitation and translation audio in English and Tamil, chapter by chapter — free to download and share.</p>
+        <div class="links">
+          <a href="https://github.com/GodAloneOSS/audios">Browse</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="category">
     <h2>Video</h2>
-    <div class="projects"></div>
+    <p style="color: var(--text-dim);">More to come, in shaa Allah.</p>
   </section>
 
   <section class="category">
     <h2>Kids</h2>
     <div class="projects">
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/kids-quran-coloring-book">Kids Quran Coloring Book</a></h3>
-        <p>[Short description]</p>
+        <h3><a href="https://godaloneoss.github.io/kids-quran-coloring-book/">Kids Quran Coloring Book</a></h3>
+        <p>Free, printable Quran-themed coloring pages for children.</p>
         <div class="links">
-          <a href="https://github.com/GodAlone/kids-quran-coloring-book">Source</a>
+          <a href="https://godaloneoss.github.io/kids-quran-coloring-book/">View &amp; download</a>
+          <a href="https://github.com/GodAloneOSS/kids-quran-coloring-book">Source</a>
         </div>
       </div>
     </div>
@@ -200,24 +232,31 @@
     <h2>Developer Tools</h2>
     <div class="projects">
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/quran-data">quran-data</a></h3>
+        <h3><a href="https://github.com/GodAloneOSS/quran-data">quran-data</a></h3>
         <p>Shared Quran text, translations, and metadata used across every project.</p>
         <div class="links">
-          <a href="https://github.com/GodAlone/quran-data">Source</a>
+          <a href="https://github.com/GodAloneOSS/quran-data">Source</a>
         </div>
       </div>
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/i18n-strings">i18n-strings</a></h3>
+        <h3><a href="https://github.com/GodAloneOSS/i18n-strings">i18n-strings</a></h3>
         <p>Shared UI translation strings for all sites and apps.</p>
         <div class="links">
-          <a href="https://github.com/GodAlone/i18n-strings">Source</a>
+          <a href="https://github.com/GodAloneOSS/i18n-strings">Source</a>
         </div>
       </div>
       <div class="project-card">
-        <h3><a href="https://github.com/GodAlone/design-system">design-system</a></h3>
+        <h3><a href="https://github.com/GodAloneOSS/design-system">design-system</a></h3>
         <p>The navy + gold visual identity shared across products.</p>
         <div class="links">
-          <a href="https://github.com/GodAlone/design-system">Source</a>
+          <a href="https://github.com/GodAloneOSS/design-system">Source</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3><a href="https://github.com/GodAloneOSS/docs">docs</a></h3>
+        <p>Central documentation for users, developers and contributors across the whole ecosystem.</p>
+        <div class="links">
+          <a href="https://github.com/GodAloneOSS/docs">Read</a>
         </div>
       </div>
     </div>
@@ -232,7 +271,8 @@
 
 <footer>
   <p>Open source · Free · Transparent · Reusable · Accessible · Well documented</p>
-  <p><a href="https://github.com/GodAlone" style="color: var(--gold);">github.com/GodAlone</a></p>
+  <p>Every repository here is licensed under MIT (code) or CC0 1.0 Universal (content) — use it, build on it, share it, no permission needed.</p>
+  <p><a href="https://github.com/GodAloneOSS">github.com/GodAloneOSS</a></p>
 </footer>
 
 </body>
